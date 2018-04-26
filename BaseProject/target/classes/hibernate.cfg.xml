@@ -1,19 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
-        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.password">root</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/thebend</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="hibernate.search.autoregister_listeners">true</property>
-        <property name="hibernate.validator.apply_to_ddl">false</property>
-        
-        <property name="hibernate.transaction.manager_lookup_class">rg.hibernate.transaction.JBossTransactionManagerLookup</property>
-        <property name="hibernate.transaction.factory_class">org.hibernate.transaction.CMTTransactionFactory</property>
-        
-        
-    </session-factory>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_inv_freel</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">antoniobruno</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		
+		<!-- Mappings -->
+		<mapping class="entities.AnnuncioProgetto" />
+		<mapping class="entities.Categoria" />
+		<mapping class="entities.ElementoFattura" />
+		<mapping class="entities.Fattura" />
+		<mapping class="entities.Feedback" />
+		<mapping class="entities.File" />
+		<mapping class="entities.Iva" />
+		<mapping class="entities.Log" />
+		<mapping class="entities.Login" />
+		<mapping class="entities.Messaggio" />
+		<mapping class="entities.MessaggioId" />
+		<mapping class="entities.Offerta" />
+		<mapping class="entities.Progetto" />
+		<mapping class="entities.StatoOfferta" />
+		<mapping class="entities.StatoPagamento" />
+		<mapping class="entities.StatoProgetto" />
+		<mapping class="entities.StoricoPagamento" />
+		<mapping class="entities.StoricoProgetto" />
+		<mapping class="entities.Tag" />
+		<mapping class="entities.TipologiaFattura" />
+		<mapping class="entities.TipologiaUtente" />
+		<mapping class="entities.TipoUtente" />
+		<mapping class="entities.Utente" />
+		<mapping class="entities.UtenteSpecifico" />
+		<mapping class="entities.UtenteSpecificoId" />
+		<mapping class="entities.UtenteTag" />
+		<mapping class="entities.UtenteTagId" />
+	</session-factory>
 </hibernate-configuration>

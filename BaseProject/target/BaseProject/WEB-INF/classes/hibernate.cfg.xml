@@ -14,29 +14,6 @@
         <property name="hibernate.transaction.manager_lookup_class">rg.hibernate.transaction.JBossTransactionManagerLookup</property>
         <property name="hibernate.transaction.factory_class">org.hibernate.transaction.CMTTransactionFactory</property>
         
-<!--         <mapping class="entity.Iva"/> -->
-<!--         <mapping class="entity.StatoOfferta"/> -->
-<!--         <mapping class="entity.UtenteSpecifico"/> -->
-<!--         <mapping class="entity.Tag"/> -->
-<!--         <mapping class="entity.Offerta"/> -->
-<!--         <mapping class="entity.StatoProgetto"/> -->
-<!--         <mapping class="entity.Categoria"/> -->
-<!--         <mapping class="entity.Progetto"/> -->
-<!--         <mapping class="entity.Login"/> -->
-<!--         <mapping class="entity.UtenteTag"/> -->
-<!--         <mapping class="entity.StoricoProgetto"/> -->
-<!--         <mapping class="entity.Log"/> -->
-<!--         <mapping class="entity.Utente"/> -->
-<!--         <mapping class="entity.StoricoPagamento"/> -->
-<!--         <mapping class="entity.ElementoFattura"/> -->
-<!--         <mapping class="entity.TipologiaFattura"/> -->
-<!--         <mapping class="entity.StatoPagamento"/> -->
-<!--         <mapping class="entity.TipologiaUtente"/> -->
-<!--         <mapping class="entity.File"/> -->
-<!--         <mapping class="entity.Fattura"/> -->
-<!--         <mapping class="entity.Messaggio"/> -->
-<!--         <mapping class="entity.TipoUtente"/> -->
-<!--         <mapping class="entity.Feedback"/> -->
-<!--         <mapping class="entity.AnnuncioProgetto"/> -->
+        
     </session-factory>
 </hibernate-configuration>
