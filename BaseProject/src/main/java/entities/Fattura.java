@@ -23,7 +23,7 @@ import javax.persistence.UniqueConstraint;
  */
 @Entity
 @Table(name = "fattura", catalog = "db_inv_freel", uniqueConstraints = @UniqueConstraint(columnNames = "NUMERO"))
-public class Fattura implements java.io.Serializable {
+public class Fattura implements java.io.Serializable, entities.Entity {
 
 	/**
 	 * 

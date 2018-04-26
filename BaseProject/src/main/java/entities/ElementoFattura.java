@@ -16,8 +16,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "elemento_fattura", catalog = "db_inv_freel")
-public class ElementoFattura implements java.io.Serializable {
+public class ElementoFattura implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer rowId;
 	private Fattura fattura;
 	private Iva iva;

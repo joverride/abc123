@@ -23,7 +23,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "file", catalog = "db_inv_freel")
-public class File implements java.io.Serializable {
+public class File implements java.io.Serializable, entities.Entity {
 
 	/**
 	 * 

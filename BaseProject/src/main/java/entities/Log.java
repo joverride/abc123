@@ -16,8 +16,12 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "log", catalog = "db_inv_freel")
-public class Log implements java.io.Serializable {
+public class Log implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer rowId;
 	private int rifId;
 	private String idSottoinsieme;

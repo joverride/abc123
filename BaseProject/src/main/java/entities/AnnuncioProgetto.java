@@ -22,8 +22,12 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "annuncio_progetto", catalog = "db_inv_freel")
-public class AnnuncioProgetto implements java.io.Serializable {
+public class AnnuncioProgetto implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer rowId;
 	private Progetto progetto;
 	private Date dataPubblicazione;

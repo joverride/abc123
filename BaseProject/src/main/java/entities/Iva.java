@@ -15,8 +15,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "iva", catalog = "db_inv_freel")
-public class Iva implements java.io.Serializable {
+public class Iva implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private float iva;
 	private Set<ElementoFattura> elementoFatturas = new HashSet<ElementoFattura>(0);
 

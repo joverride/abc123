@@ -18,8 +18,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "tag", catalog = "db_inv_freel")
-public class Tag implements java.io.Serializable {
+public class Tag implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String nome;
 	private Set<UtenteTag> utenteTags = new HashSet<UtenteTag>(0);
 	private Set<Categoria> categorias = new HashSet<Categoria>(0);

@@ -15,8 +15,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "tipologia_fattura", catalog = "db_inv_freel")
-public class TipologiaFattura implements java.io.Serializable {
+public class TipologiaFattura implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String tipologia;
 	private Set<Fattura> fatturas = new HashSet<Fattura>(0);
 

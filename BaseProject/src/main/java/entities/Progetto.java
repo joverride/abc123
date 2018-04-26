@@ -24,7 +24,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "progetto", catalog = "db_inv_freel")
-public class Progetto implements java.io.Serializable {
+public class Progetto implements java.io.Serializable, entities.Entity {
 
 	/**
 	 * 

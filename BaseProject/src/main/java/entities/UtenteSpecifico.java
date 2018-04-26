@@ -23,8 +23,12 @@ import javax.persistence.UniqueConstraint;
  */
 @Entity
 @Table(name = "utente_specifico", catalog = "db_inv_freel", uniqueConstraints = @UniqueConstraint(columnNames = "ROW_ID"))
-public class UtenteSpecifico implements java.io.Serializable {
+public class UtenteSpecifico implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private UtenteSpecificoId id;
 	private TipoUtente tipoUtente;
 	private Utente utente;

@@ -23,7 +23,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "messaggio", catalog = "db_inv_freel")
-public class Messaggio implements java.io.Serializable {
+public class Messaggio implements java.io.Serializable, entities.Entity {
 
 	/**
 	 * 

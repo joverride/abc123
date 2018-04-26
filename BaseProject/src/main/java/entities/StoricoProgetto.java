@@ -22,8 +22,12 @@ import org.hibernate.annotations.Parameter;
  */
 @Entity
 @Table(name = "storico_progetto", catalog = "db_inv_freel")
-public class StoricoProgetto implements java.io.Serializable {
+public class StoricoProgetto implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer rowId;
 	private Utente utente;
 	private StatoProgetto statoProgetto;

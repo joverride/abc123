@@ -13,7 +13,7 @@ import javax.transaction.NotSupportedException;
 import javax.transaction.RollbackException;
 import javax.transaction.SystemException;
 
-import core.data.UserOperations;
+import core.query.UserOperations;
 
 /**
  * Servlet implementation class TestServlet

@@ -19,8 +19,12 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "storico_pagamento", catalog = "db_inv_freel")
-public class StoricoPagamento implements java.io.Serializable {
+public class StoricoPagamento implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer rowId;
 	private Progetto progetto;
 	private StatoPagamento statoPagamento;

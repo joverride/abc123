@@ -15,8 +15,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "stato_progetto", catalog = "db_inv_freel")
-public class StatoProgetto implements java.io.Serializable {
+public class StatoProgetto implements java.io.Serializable, entities.Entity{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String stato;
 	private Set<StoricoProgetto> storicoProgettos = new HashSet<StoricoProgetto>(0);
 

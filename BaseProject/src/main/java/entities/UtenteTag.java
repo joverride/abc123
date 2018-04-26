@@ -16,8 +16,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "utente_tag", catalog = "db_inv_freel")
-public class UtenteTag implements java.io.Serializable {
+public class UtenteTag implements java.io.Serializable, entities.Entity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private UtenteTagId id;
 	private Tag tag;
 	private UtenteSpecifico utenteSpecifico;
